@@ -3,12 +3,6 @@ const checkboxes = document.querySelectorAll('#check1, #check2, #check3');
 const agreeBtn = document.querySelector('#agreeBtn');
 const cancelBtn = document.querySelector('#cancelBtn');
 const checkError = document.querySelector('.check-error');
-const easterEgg = document.querySelector('.check-contents');
-
-easterEgg.addEventListener('click', function () {
-  easterEgg.innerHTML = `<p> 나이키에 오신 것을 환영합니다! 법률 약관이 업데이트 되었습니다.
-            진행하기 전에 내용을 검토하고 동의해 주세요.</p>`;
-});
 
 checkAll.addEventListener('change', function () {
   checkboxes.forEach(checkbox => {
